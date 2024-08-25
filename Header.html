@@ -1,0 +1,597 @@
+<div class="navbar desktop-navbar">
+    <div class="logo">
+        <a href="https://off-snkrs.com" class="logo-link">
+            <img src="https://off-snkrs.com/wp-content/uploads/2024/06/LogoType-PRJS.png" alt="Logo">
+        </a>
+    </div>
+    <div class="nav-links">
+        <a href="https://off-snkrs.com/store/" class="nav-link">En ce moment</a>
+        <a href="https://off-snkrs.com/produits-a-venir/" class="nav-link">Homme</a>
+        <a href="#" class="nav-link">Femme</a>
+        <a href="https://off-snkrs.com" class="nav-link">Prochaines sorties</a>
+        <a href="#" class="nav-link">Offres</a>
+    </div>
+    <div class="icons">
+        <a href="https://off-snkrs.com/tableau-de-bord-client/" class="icon user-icon"></a>
+        <a href="javascript:void(0);" class="icon bag-icon-pc" onclick="openNav()"></a>
+    </div>
+</div>
+
+<!-- Barre de navigation pour Mobile -->
+<div class="navbar mobile-navbar">
+    <div class="top-bar">
+        <div class="logo">
+            <a href="your-logo-link-url" class="logo-link">
+                <img src="https://off-snkrs.com/wp-content/uploads/2024/05/cropped-Favicon.png" alt="Logo">
+            </a>
+        </div>
+        <div class="icons">
+            <a href="https://off-snkrs.com/tableau-de-bord-client/" class="icon user-icon"></a>
+            <a href="https://off-snkrs.com/tableau-de-bord-client/" class="icon shop-icon"></a>
+            <a href="javascript:void(0);" class="icon bag-icon" onclick="openNav()"></a>
+        </div>
+    </div>
+</div>
+
+<div class="blur-background"></div>
+<!-- Menu déroulant -->
+<div id="myNav" class="overlay">
+    <div class="btnclose">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <svg class="close-icon" width="12" height="12" viewBox="0 0 30 30">
+            <line x1="0" y1="0" x2="30" y2="30" stroke="black" stroke-width="2"/>
+            <line x1="30" y1="0" x2="0" y2="30" stroke="black" stroke-width="2"/>
+        </svg>
+        </a>
+    </div>
+    <div class="overlay-content">
+        <a href="https://off-snkrs.com/store/">En ce moment</a>
+        <a href="#">Homme</a>
+        <a href="#">Femme</a>
+        <a href="https://off-snkrs.com">Prochaines sorties</a>
+        <a href="#">Offres</a>
+    </div>
+    <ul class="brand-list">
+        <li class="brand-item">
+            <a href="https://off-snkrs.com/nike/" aria-label="Nike" class="brand-link">
+                <img src="https://off-snkrs.com/wp-content/uploads/2024/06/NIKESTORE-scaled.webp" alt="Nike">
+                <span class="brand-text">Nike</span>
+            </a>
+        </li>
+        <li class="brand-item">
+            <a href="https://off-snkrs.com/nike/" aria-label="Air Jordan" class="brand-link">
+                <img src="https://off-snkrs.com/wp-content/uploads/2024/06/AJSTORE-scaled.webp" alt="Air Jordan">
+                <span class="brand-text">Air Jordan</span>
+            </a>
+        </li>
+        <li class="brand-item">
+            <a href="https://off-snkrs.com/adidas/" aria-label="Adidas" class="brand-link">
+                <img src="https://off-snkrs.com/wp-content/uploads/2024/06/ADSTORE-scaled.webp" alt="Adidas">
+                <span class="brand-text">Adidas</span>
+            </a>
+        </li>
+        <li class="brand-item">
+            <a href="https://off-snkrs.com/asics/" aria-label="Asics" class="brand-link">
+                <img src="https://off-snkrs.com/wp-content/uploads/2024/06/ASICSSTORE-scaled.webp" alt="Asics">
+                <span class="brand-text">Asics</span>
+            </a>
+        </li>
+        <li class="brand-item">
+            <a href="https://off-snkrs.com/new-balance/" aria-label="NB" class="brand-link">
+                <img src="https://off-snkrs.com/wp-content/uploads/2024/06/NBSTORE-scaled.webp" alt="NB">
+                <span class="brand-text">New Balance</span>
+            </a>
+        </li>
+        <li class="brand-item">
+            <a href="https://off-snkrs.com/off-white/" aria-label="OW" class="brand-link">
+                <img src="https://off-snkrs.com/wp-content/uploads/2024/06/OWSTORE-scaled.webp" alt="Off-White">
+                <span class="brand-text">Off-White</span>
+            </a>
+        </li>
+    </ul>
+    <div class="userlog">
+        <p>Deviens membre OFF SNKRS <br> pour accéder au meilleur des <br> produits et découvrir des <br> contenus exclusifs sur les <br> sneakers. 
+            <a class="learn-more" href="#">En savoir plus</a>
+        </p>
+        <div class="buttons">
+            <a class="nds-btn join-btn css-8seky9 ex41m6f0 btn-primary-dark" href="https://www.nike.com/fr/adhesion">Rejoins-nous<span class="ripple"></span></a>
+            <a class="nds-btn sign-btn css-8seky9 ex41m6f0 btn-primary-dark" href="https://www.nike.com/fr/connexion">S'identifier<span class="ripple"></span></a>
+        </div>
+
+    </div>
+    <div class="menu-footer">
+        <span class="menu-location">France</span>
+    </div>
+</div>
+
+<style>
+/* Définir la police SF Pro Medium */
+@font-face {
+    font-family: 'SF Pro Medium';
+    font-weight: 400;
+    src: url('https://off-snkrs.com/wp-content/uploads/2024/05/SF-Pro-Display-Medium.ttf');
+}
+
+/* Supprimer l'effet de fond gris au clic sur un lien dans un navigateur mobile */
+a, button {
+    -webkit-tap-highlight-color: transparent; /* Pour les navigateurs mobiles basés sur WebKit */
+    outline: none; /* Supprime la bordure de mise au point par défaut */
+}
+
+/* Supprimer l'effet de fond au clic */
+a:active, a:focus, button:active, button:focus {
+    background: transparent;
+    outline: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #fff;
+    margin: 0;
+    height: 60px;
+    z-index: 9999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0; /* Enlever tout padding */
+    margin: 0; /* Enlever tout margin */
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-family: 'SF Pro Medium', sans-serif;
+    font-weight: 400;
+    padding: 8px 17px; /* Réserver l'espace pour le survol */
+    height: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, border-radius 0.3s;
+    margin: 0;
+    background-color: transparent; /* Couleur de fond transparente */
+}
+
+.nav-link:hover {
+    background-color: #f5f5f5; /* Couleur de fond au survol */
+    border-radius: 50px; /* Bordures arrondies */
+    padding: 8px 17px; /* Réserver l'espace pour le survol */
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+}
+
+.icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Specific Icons */
+.user-icon {
+    background-image: url('https://off-snkrs.com/wp-content/uploads/2024/07/user-icon.webp');
+}
+
+.bag-icon {
+    background-image: url('https://off-snkrs.com/wp-content/uploads/2024/06/menux2.png');
+}
+
+.bag-icon-pc {
+    background-image: url('https://off-snkrs.com/wp-content/uploads/2024/06/menux2.png');
+}
+
+.shop-icon {
+    background-image: url('https://off-snkrs.com/wp-content/uploads/2024/06/menux2.png');
+}
+
+/* Desktop/Tablet Styles */
+.desktop-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+@media (max-width: 768px) {
+    .desktop-navbar {
+        display: none;
+    }
+}
+
+/* Mobile Styles */
+.mobile-navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0px 25px;
+}
+
+@media (max-width: 768px) {
+    .mobile-navbar {
+        display: flex;
+    }
+}
+
+.mobile-navbar .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px; /* Hauteur fixe pour la barre de navigation sur mobile */
+    padding: 0 10px; /* Ajoutez du padding horizontal si nécessaire */
+    margin: 0;
+}
+
+.mobile-navbar .logo {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Assurez que le conteneur du logo utilise toute la hauteur disponible */
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-navbar .logo img {
+    max-height: 100%; /* Assurez que le logo ne dépasse pas la hauteur de la barre */
+    width: auto;
+    padding-top: 10px; /* Ajoutez un padding supérieur pour descendre le logo */
+}
+
+.mobile-navbar .icons {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Assurez que les icônes utilisent toute la hauteur disponible */
+    padding: 0;
+    margin: 0;
+    gap: 15px; /* Espacement entre les icônes */
+}
+
+/* Fade effect for the background blur */
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Couleur de fond semi-transparente pour simuler le flou */
+    z-index: 998; /* Derrière l'overlay */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    pointer-events: none; /* Pour éviter que le fond flou reçoive des événements de souris */
+    backdrop-filter: blur(8px); /* Effet de flou */
+    -webkit-backdrop-filter: blur(8px); /* Effet de flou pour Safari */
+    pointer-events: none;
+}
+
+/* Assurez-vous que la classe .open est ajoutée lorsque vous voulez afficher la div */
+.blur-background.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.closebtn {
+    position: absolute;
+    top: 21px;
+    right: 33px;
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    z-index: 99;
+}
+
+.btnclose {
+    margin: 0;
+    padding: 10px 0px;
+}
+
+/* Menu déroulant */
+.overlay {
+    height: 100%;
+    width: 80%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-color: white;
+    backdrop-filter: blur(10px); /* Ajoutez cette ligne pour l'effet de flou */
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column; /* Disposer les enfants en colonne */
+    padding: 24px 30px;
+}
+
+.overlay.open {
+    transform: translateX(0);
+}
+
+/* Réglez l'espacement entre les sections */
+.overlay-content,
+.brand-list,
+.userlog {
+    margin-bottom: 20px; /* Espace entre les sections */
+    padding: 24px 0px; /* Retirer le padding pour l'espacement par défaut */
+}
+
+.overlay-content a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    transition: 0.3s;
+    font-family: 'SF Pro Medium', sans-serif;
+}
+
+.overlay-content a:hover, .overlay-content a:focus {
+    color: #f1f1f1;
+}
+
+.brand-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-bottom: 20px; /* Espace entre les sections */
+}
+
+.brand-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.brand-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-list img {
+    max-height: 30px;
+    height: auto;
+    width: auto;
+}
+
+.brand-text {
+    font-family: 'SF Pro Medium', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    line-height: 1;
+    color: black;
+}
+
+.userlog {
+    text-align: left;
+    font-family: 'SF Pro Medium', sans-serif;
+}
+
+.userlog p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #707072;
+    margin: 0;
+}
+
+.userlog a.learn-more {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.userlog a.learn-more:hover {
+    text-decoration: underline;
+}
+
+.userlog .buttons {
+    display: flex;
+    margin-top: 24px;
+    gap: 10px;
+}
+
+.userlog .buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'SF Pro Medium', sans-serif;
+    font-size: 17px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.userlog .buttons .join-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.userlog .buttons .join-btn:hover {
+    background-color: #333;
+}
+
+.userlog .buttons .sign-btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.userlog .buttons .sign-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-footer {
+    font-family: 'SF Pro Medium', sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+
+/* Désactiver le scroll */
+body.no-scroll,
+html.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+/* Media Queries pour tailles spécifiques */
+@media (max-width: 768px) {
+    .desktop-navbar {
+        display: none;
+    }
+    .mobile-navbar .top-bar {
+        height: 60px; /* Hauteur fixe pour la barre de navigation sur mobile */
+        padding: 0;
+        margin: 0;
+    }
+    .mobile-navbar .logo img {
+        max-height: 100%; /* Assurez que le logo ne dépasse pas la hauteur de la barre */
+        width: auto;
+    }
+    .logo img {
+        height: 120px; /* Taille du logo pour tablette */
+        width: auto;
+    }
+    .icon {
+        width: 17px; /* Taille des icônes pour mobile */
+        height: 17px;
+    }
+    .icons {
+        gap: 10px; /* Réduisez cette valeur pour diminuer l'espace entre les icônes sur mobile */
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links {
+        gap: 5px !important; /* Réduisez ou augmentez cette valeur pour modifier l'espace entre les liens sur mobile */
+        margin-top: 10px; /* Ajoutez une marge supérieure pour descendre les boutons */
+        padding: 0;
+    }
+    .shop-icon {
+        display: none;
+    }
+    .overlay .closebtn {
+        top: 21px;
+        right: 23px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo img {
+        height: 16px; /* Taille du logo pour tablette */
+        width: auto;
+    }
+    .icon {
+        width: 17px; /* Taille des icônes pour tablette */
+        height: 17px;
+    }
+    .icons {
+        gap: 15px; /* Réduisez cette valeur pour diminuer l'espace entre les icônes sur tablette */
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .mobile-navbar {
+        display: none;
+    }
+    .logo img {
+        height: 16px; /* Taille du logo pour desktop */
+        width: auto;
+    }
+    .icon {
+        width: 20px; /* Taille des icônes pour desktop */
+        height: 20px;
+    }
+    .icons {
+        gap: 14px; /* Réduisez cette valeur pour diminuer l'espace entre les icônes sur desktop */
+        padding: 0;
+        margin: 0;
+    }
+    .nav-links {
+        gap: 5px; /* Réduisez ou augmentez cette valeur pour modifier l'espace entre les liens sur desktop */
+        padding: 0;
+        margin: 0;
+    }
+    .user-icon {
+        width: 18px; /* Taille des icônes pour desktop */
+        height: 18px;
+    }
+    .bag-icon-pc {
+        display: none;
+    }
+}
+</style>
+
+<script>
+function openNav() {
+    var overlay = document.querySelector('.overlay');
+    var blurBackground = document.querySelector('.blur-background');
+
+    // Ajouter la classe pour afficher l'overlay et le fond flou
+    overlay.classList.add('open');
+    blurBackground.style.opacity = '1';
+    blurBackground.style.visibility = 'visible';
+
+    // Désactiver le scroll de la page principale mais permettre le scroll dans l'overlay
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+}
+
+function closeNav() {
+    var overlay = document.querySelector('.overlay');
+    var blurBackground = document.querySelector('.blur-background');
+
+    // Retirer la classe pour masquer l'overlay et le fond flou
+    overlay.classList.remove('open');
+    blurBackground.style.opacity = '0';
+    blurBackground.style.visibility = 'hidden';
+
+    // Réactiver le scroll de la page
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+}
+</script>
